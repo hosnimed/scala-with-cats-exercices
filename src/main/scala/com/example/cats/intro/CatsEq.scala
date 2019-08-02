@@ -1,14 +1,14 @@
-package com.example.cats
+package com.example.cats.intro
 
 object CatsEq {
 
   import cats.Eq
-
   import cats.instances.int._ // for Eq
   implicit val eqInt : Eq[Int] = Eq[Int]
 
   //Eq for custom types : date
   import java.util.Date
+
   import cats.instances.long._
   import cats.syntax.eq._
   implicit val eqDate : Eq[Date] = Eq.instance[Date]((d1: Date, d2:Date) => d1.getTime === d2.getTime)

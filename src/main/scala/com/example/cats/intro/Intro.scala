@@ -1,14 +1,13 @@
-package com.example.cats
+package com.example.cats.intro
 
 import cats.instances.string._
 import cats.syntax.semigroup._
 
-object Main extends App {
+object Intro extends App {
   println("Hello " |+| "Cats!")
 
-  import PrintableObjectLibrary.Printable
+  import PrintableObjectLibrary.{Cat, Printable}
   import PrintableObjectLibrary.PrintableInstances._
-  import PrintableObjectLibrary.Cat
 
   val cat = Cat("TOM", 10, "RED")
 
@@ -40,8 +39,8 @@ object Main extends App {
 
 
   // equality with cats
-  import cats.syntax.eq._
   import CatsEq.eqInt
+  import cats.syntax.eq._
   println(s"123 eqv 123 ==> ${eqInt.eqv(123, 123)}")
   println(s"123 neqv 1234 ==> ${eqInt.neqv(123, 1234)}")
   //  println(s"123 eqv String(\"abc\") ==>  ${eqInt.eqv(123, "abc")}") //compile error

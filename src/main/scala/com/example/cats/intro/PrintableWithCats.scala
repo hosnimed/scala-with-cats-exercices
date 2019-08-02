@@ -1,9 +1,8 @@
-package com.example.cats
+package com.example.cats.intro
 
 object PrintableWithCats {
 
   import PrintableObjectLibrary.Cat
-
   import cats.Show
   import cats.instances.int._
   import cats.instances.string._

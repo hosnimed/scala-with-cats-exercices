@@ -1,5 +1,4 @@
-package com.example.cats
-
+package com.example.cats.intro
 
 object MeetCats {
 

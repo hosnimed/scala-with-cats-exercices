@@ -1,5 +1,6 @@
-package com.example.cats
-import PrintableObjectLibrary.Printable
+package com.example.cats.intro
+
+import com.example.cats.intro.PrintableObjectLibrary.Printable
 
 object PrintableSyntaxLibrary {
 
